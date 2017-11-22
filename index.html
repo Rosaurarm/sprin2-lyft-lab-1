@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reto de Código: Lyft </title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">     <!-- Enlazo mis archivos CSS a mi archivo HTML -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,700" rel="stylesheet">  <!-- Enlazo Google Fonts. Tipo de fuente Montserrat -->
+</head>
+<!-- CABECERA -->
+<body>
+    <header id="cabezal">   <!-- Declaro mi primer ID para el cabezal que contendra una imagen y cuatro enlaces -->
+        <img id="navLogo" src="assets/images/logo-white.png" alt="Logo Lyft">  <!-- Enlazo mi primera imagen -->
+        <!-- Navegador fijo -->
+        <nav id="navSiempreVisible">
+            <ul>   <!-- Creo una lista ordenada que contendrá los elementos de mi barra de navegación. Cala uno de ellos con una clase para poder llamarlos y darles estilo en CSS -->
+                <li class="elementoNav">Drive</li>
+                <li classs="elementoNav" id="elementoExploreNav">Explore </li>
+                <li classs="elementoNav">Help</li>
+                <li classs="elementoNav" id="elementoLogInNav">
+                    <button id="botonLogInNav">Log in</button>
+                </li>
+                <li classs="elementoNav" id="elementoSingUpNav">   <!-- Este bot+on aparece y desaparece. display none-->
+                    <button id="botonSingUpNav">Sing up</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<!-- FORMULARIO -->
+    <section id="seccion1">  <!-- Creo un ID para la primera sección de este bloque de elementos: el formulario -->
+        <div id="formulario">
+            <div class="textFormulario">
+                <h1 class="tituloForm">TURN MILES<br>INTO MONEY</h1>
+                <p class="formularioText">SIGN UP TO DRIVE WITH LYFT.</p>
+            </div>
+            <div class="numTel">     <!-- Ingreso del número de teléfono -->
+                <input class="inputs" type="text" placeholder="Phone Number" />
+                <hr>
+            </div>
+            <div class="botones">    <!-- Creo la "clase botones". Están bajo el formulario. Uno levara color y el otro no -->
+                <button class="botonDriver">Become a Driver</button><button class="botonSign"> <a>Sign Up to Ride</a></button>
+            </div>
+            <p class="infoAdicional">   <!-- Creo la clase "información adicional", para los textos bajo los botones. LLevarán interactividad en CSS -->
+                Already applied? <a class="linkInfo">Check the status of your application here.</a>
+                <br> Earn money for inviting friends to drive. <a class="linkInfo"> Learn more </a>
+            </p>
+        </div>
+        <div id="sectionTelefono">      <!-- Creo un ID para la segunda sección de este bloque de elementos: la imagen del teléfono celular  -->
+            <div id="contenidoSectionTelefono">  <!-- Creo un ID para los contenidos de la seccion de teléfono celular  -->
+                <div id="textoSectionTelefono">  <!-- Creo un ID para los textos de la sección -->
+                    <div class="bloqueText">
+                        <h2 class="tituloBloqueText"> A RIDE IN MINUTES </h2>
+                        <p class="contBloqueText">
+                            Request a ride and you’ll be on your way in minutes.
+                            <br> Request. Ride. Repeat.
+                        </p>
+                    </div>
+                    <div class="bloqueText">
+                        <h2 class="tituloBloqueText"> SERIOUS ABOUT SAFETY </h2>
+                        <p class="contBloqueText">
+                            From knowing the color of your driver’s car to our 24/7
+                            <br> Trust & Safety Team, we got you.
+                        </p>
+                    </div>
+                    <div class="bloqueText">
+                        <h2 class="tituloBloqueText"> HAPPY DRIVERS. <br> HAPPY RIDERS. </h2>
+                        <p class="contBloqueText">
+                            Ride with us and you’ll see why 9 out of 10 rides end with
+                            <br> five stars.
+                        </p>
+                    </div>
+                </div>
+                <div id="imgCelular">
+                    <img src="assets/images/phone.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Aqui van las divisiones(divisionesTextoVideo) que contienen una subdivision video(con class video para el tamaño y cada uno tiene un id(video1) para la posicion) y una subdivision texto (con class textoLadoVideo para el tamaño y un id (divisionTextoVideo1) para la posicion)-->
+    <section id="contenedorVideosTextos">
+        <div class="divisionesTextoVideo" id="divisionTextoVideo1">
+            <div class="textoLadoVideo floatIzq" id="textoLadoVideo1">
+                <h6>WATCH</h6>
+                <h3>AMPLIFY YOUR RIDE</h3>
+                <p>Lyft’s new emblem, Amp, is the secret to smooth pickups. Lighting up dashboards nationwide, the device makes it easy for passengers and drivers to find each other.</p>
+            </div>
+            <div class="video floatDer" id="video1">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/fLSmUWOYpKw" frameborder="0" allowfull></iframe>
+            </div>
+        </div>
+        <div class="divisionesTextoVideo" id="divisionTextoVideo2">
+            <div class="video floatIzq" id="video2">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/V7j8Aqxmbs8" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="textoLadoVideo floatDer" id="textoLadoVideo2">
+                <h6>WATCH</h6>
+                <h3>JUNE</h3>
+                <p>In an animated short film by Academy Award-winner John Kahrs, a lonely widow in historic South Chicago is empowered to start sharing the ride — and sharing her life, too.</p>
+            </div>
+        </div>
+        <div class="divisionesTextoVideo" id="divisionTextoVideo3">
+            <div class="textoLadoVideo floatIzq" id="textoLadoVideo3">
+                <h6>WATCH</h6>
+                <h3>A GOOD THING GOING</h3>
+                <p>Launching on TV and online, “Ride on the Bright Side” shows how Lyft continues to prioritize happy drivers, short ETAs, and safety.</p>
+            </div>
+            <div class="video floatDer" id="video3">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/xj2VWLV0xCU" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="divContenedorVerticales">
+            <div class="divsVerticales">
+              <p class="titulosVerticales">LOG IN</p>
+                <ul>
+                    <li>Help</li>
+                    <li>Cities</li>
+                    <li>Airports</li>
+                </ul>
+            </div>
+            <div class="divsVerticales">
+                <p class="titulosVerticales">PARTNER</p>
+                <ul>
+                   <li>Partnerships</li>
+                   <li>Enterprise</li>
+                   <li>Ambassadors</li>
+                   <li>Developers</li>
+                </ul>
+            </div>
+            <div class="divsVerticales">
+                <p class="titulosVerticales">LEARN</p>
+                <ul>
+                    <li>Safety</li>
+                    <li>Blog</li>
+                    <li>Press</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+            <div class="divsVerticales" id="divImagenes">
+                <img src="assets/images/apple-store.svg" alt="">
+                <img src="assets/images/google-play.png" alt="">
+                <img src="assets/images/microsoft.png" alt="">
+            </div>
+        </div>
+        <div id="divHorizontal">
+            <img src="assets/images/fb-white.png" alt="Logo Facebook">
+            <img src="assets/images/instagram-white.png" alt="Logo Instragram">
+            <img src="assets/images/tw-white.png" alt="Logo Twitter">
+            <hr id="raya">
+            <p>© 2017 Lyft, Inc.</p>
+            <p class="link">Terms</p>
+            <p class="link">Privacy</p>
+        </div>
+    </footer>
+</body>
+</html>

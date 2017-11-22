@@ -1,0 +1,303 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-image: url(../assets/images/hero.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  font-family: "Montserrat";
+  margin-top: 93px;
+}
+html, body {
+  height: 100%;
+}
+/* CABECERA */
+header {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  top: 0;
+  font-family: "Montserrat";
+  color: white;
+  z-index: 7;   /* La propiedad z-index especifica el orden de la pila de un elemento. Un elemento con mayor orden de apilamiento siempre está delante de un elemento con un orden de apilamiento inferior.*/
+}
+header > img {    /* Estilo a la imagen de logo-white.png */
+  width: 65px;
+  float: left;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+header > img:hover {
+  cursor: pointer;  /* Especifico el tipo de cursor que se mostrará cuando este se encuentre sobre un elemento */
+}
+header > nav {
+  float: right;
+  margin-right: 3%;
+}
+header > nav > ul > li {  /* Estilo a la lista ordenada de mi barra de navegación */
+  display: inline-block;
+  list-style: none;
+  width: 90px;
+  font-size: 18px;
+  margin-left: 5px;
+  line-height: 100px;
+  }
+header > nav > ul > li:hover{   /* Especifico el tipo de cursor que se mostrará cuando este se encuentre sobre un elemento */
+  color: #FF1493;
+  cursor: pointer;
+}
+header > nav > ul > li > button {  /* Estilo al boton de LOG IN de mi barra de navegacion */
+  width: 100%;
+  padding: 10px 0;
+  border: 1px solid white;
+  border-radius: 9px;
+  background-color: rgba(255, 255, 255, 0);  /* Aplico color alfa al botón de lOG IN */
+  color: white;
+  font-family: "Montserrat";
+  font-size: 18px;
+}
+#botonLogInNav:hover {      /* Especifico el tipo de cursor que se mostrará cuando este se encuentre sobre un elemento */
+  background-color: rgba(255, 255, 255, 0.35); /* Aplico opacidad (color alfa al botón de lOG IN) */
+  cursor: pointer;
+}
+#botonSingUpNav {      /* Estilo al boton de SING UP de mi barra de navegacion */
+  border-color:#ff00bf #FF1493;
+  color: #ff00bf;
+  display: none;
+}
+#botonSingUpNav:hover {    /* Especifico el tipo de cursor que se mostrará cuando este se encuentre sobre un elemento */
+  cursor: pointer;
+}
+
+
+/* SECTION */
+#seccion1 {         /* CLEAR: especifica si un elemento puede estar al lado de elementos flotantes que lo preceden o si debe ser movido (cleared) debajo de ellos */
+  clear: both;  /* BOTH: Es un keyword que indica que el elemento es movido hacia abajo para limpiar tanto elementos flotantes de la izquierda como de la derecha*/
+  margin-top: 0px;
+  position: relative;
+}
+#formulario {    /* Estilo al recuadro de la derecha */
+  width: 40%;
+  height: 100%;
+  background-color: #fff;
+  float:right;
+  font-family: "Montserrat";
+  color: #36218c;
+  padding-left: 50px;
+  padding-top: 70px;
+  padding-bottom: 80px;
+  margin-top: 100px;
+}
+#formulario .tituloForm {
+  font-size: 45px;
+  font-weight: 800;
+}
+#formulario .formularioText {
+  margin-top: 40px;
+  font-size: 90%;
+}
+.numTel {    /* Estilo al formulario donde se solicita ingresar un número de teléfono */
+  margin-top: 10px;
+  width: 90%;
+}
+.numTel .inputs {
+  width: 90%;
+  height: 40px;
+}
+.numTel {
+  display: inline-block;
+}
+.botonDriver {                   /* Estilo al botón de BECOME A DRIVER */
+  margin-top: 15px;
+  background-color: #ff00bf;
+  border: none;
+  border-radius: 7px;
+  height: 40px;
+  width: 200px;
+  color: #fff;      /* Color de letra */
+  font-size: 90%;
+}
+.botonSign {         /* Estilo al botón de SING UP TO RIDE */
+  margin-top: 10px;
+  background-color: #fff;
+  border: none;
+  border-radius: 7px;
+  height: 40px;
+  width: 200px;
+  color: #6e6f80;
+  text-decoration: underline;
+  font-size: 90%;
+}
+.infoAdicional {           /* Estilo a la información bajo los botones */
+  margin-top: 30px;
+  color: #6e6f80;
+  font-size: 70%;
+}
+.infoAdicional .linkInfo:hover {     /* Especifico el tipo de cursor que se mostrará cuando este se encuentre sobre un elemento */
+  color: #ff00bf;
+  text-decoration: none;
+  cursor: pointer;
+}
+  /* TELÉFONO */
+#sectionTelefono {
+  clear: both;
+  background: linear-gradient(#301F69, #691B84) fixed;   /*  linear-gradient: crea una <image> la cual representa un degradado lineal de colores */
+  padding: 20px;
+}
+#contenidoSectionTelefono {   /* Estilo a la segunda caja contenedora */
+  margin: auto;
+  width: 900px;
+  height: 100%;
+}
+#textoSectionTelefono {   /* Estilo al texto de la segunda caja contenedora */
+  color: #fff;
+  display: inline-block;
+  margin-top: 10%;
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-bottom: 10%;
+  width: 40%;
+}
+.tituloBloqueText {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.contBloqueText {
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+#imgCelular {       /* Estilo a la imagen de phone.png*/
+  width: 35%;
+  display: inline-block;
+  position: absolute;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+#imgCelular > img{
+  width: 100%;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+
+/*  VIDEOS  */
+.divisionesTextoVideo {
+  display: block;
+}
+.video {
+  width: 65%;
+}
+.video iframe {
+  width: 100%;
+  min-width: 400px;   /* Establece la anchura mínima de los elementos de bloque */
+}
+.textoLadoVideo {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 30%;
+  min-width: 100px;
+  margin-top: 10%;
+  font-weight: 300;
+}
+.textoLadoVideo h6 {    /* Estilos para la informacion de los videos */
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  }
+.textoLadoVideo h3 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+.floatDer {
+  float: right;
+}
+.floatIzq {
+  clear: both;
+  float: left;
+}
+#textoLadoVideo2 {       /* Texto a los lados del video */
+  margin-right: 5%;
+}
+#textoLadoVideo1,
+#textoLadoVideo3 {
+  margin-left: 5%;
+}
+
+/*  PIE DE PÁGINA */
+footer {
+  clear: both;
+  background: #34334a;   /* color de fondo del pie de página */
+  height: 550px;
+  width: 100%;
+  position: relative;
+  padding-top: 50px;
+  color: white;
+}
+#divContenedorVerticales {     /* Divs verticales del footer */
+  overflow: hidden;      /* overflow  especifica si recortar contenido, dibujar barras de desplazamiento o mostrar el contenido excedente en un elemento a nivel de bloque. Hidde: el contenido es recortado y no se muestran barras de posición. */
+  width: 90%;
+  margin: auto;
+  }
+.divsVerticales {   /* Ubicacion de los divs Verticales */
+  float: left;
+  width: 20%;
+}
+.titulosLink,
+.titulosVerticales {
+  font-weight: 600;
+}
+.titulosVerticales {  /* Establezco color a los títulos de LOG IN, PARTNER Y LEARN */
+  color: #b0b4e8;
+  line-height: 40px;
+}
+.divsVerticales ul li {  /* Estilo a las listas ordenadas. Van debajo de los títulos verticales */
+  list-style: none;
+  line-height: 40px;
+            }
+.divsVerticales ul li:hover, #divHorizontal .link:hover {      /* Especifico el tipo de cursor que se mostrará cuando este se encuentre sobre un elemento */
+  color: #FF1493;
+  text-decoration: underline;
+  cursor: pointer;
+}
+#divImagenes {    /* Estilo a las imágenes a la derecha de las listas ordenadas (Apple, Google y Microsoft)*/
+  float: right;
+  width: 12%;
+  margin-top: 15px;
+}
+#divImagenes img {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 15px;
+}
+#divHorizontal {             /* Parte horizontal final del footer */
+  position: absolute;
+  bottom: 10px;
+  left: 20%;
+  width: 60%;
+  text-align: center
+}
+#divHorizontal img {     /* Estilo a los logos de las redes sociales */
+ height: 40px;
+ width: 40px;
+ margin: 20px;
+ position: relative;
+}
+#divHorizontal img:hover, #divImagenes img:hover {     /* Especifico el tipo de cursor que se mostrará cuando este se encuentre sobre un elemento */
+  cursor: pointer;
+            }
+#raya {                 /* Estilo a la línea horizontal que divide los logos del texto final */
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+#divHorizontal p {
+  display: inline-block;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
